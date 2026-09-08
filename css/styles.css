@@ -414,8 +414,10 @@ ul {
 }
 
 .brand-emblem-img {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
 }
 
 .brand-logo-details {
