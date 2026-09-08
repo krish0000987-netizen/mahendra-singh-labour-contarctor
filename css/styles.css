@@ -957,7 +957,7 @@ ul {
   position: relative;
   padding: 6rem 0;
   background: linear-gradient(135deg, rgba(12, 12, 12, 0.95), rgba(18, 18, 18, 0.92)),
-              url('https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1920&q=80') center/cover;
+              url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1920&q=80') center/cover;
   border-top: 1px solid var(--gold-border);
   border-bottom: 1px solid var(--gold-border);
   overflow: hidden;
