@@ -430,9 +430,13 @@ ul {
   font-size: 1.05rem;
   font-weight: 900;
   letter-spacing: 0.08em;
-  color: #ffffff;
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ffd700;
   line-height: 1.1;
   white-space: nowrap;
+  filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.35));
 }
 
 .brand-sub {
@@ -440,7 +444,7 @@ ul {
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.22em;
-  color: var(--gold-light);
+  color: #ffffff;
   line-height: 1.1;
   margin-top: 2px;
   white-space: nowrap;
@@ -460,6 +464,35 @@ ul {
   color: #a1a1aa;
   margin-top: 2px;
   white-space: nowrap;
+}
+
+/* Social Media Pill Buttons */
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.85rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-full);
+  color: var(--gold-light);
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  background: var(--gold-gradient);
+  border-color: #ffd866;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.social-btn svg {
+  flex-shrink: 0;
 }
 
 /* Main Navigation Links (No Wrap & Luxury Dropdowns) */
