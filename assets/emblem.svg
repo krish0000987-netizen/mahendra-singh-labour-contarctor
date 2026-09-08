@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff2a8" />
+      <stop offset="30%" stop-color="#e8b931" />
+      <stop offset="60%" stop-color="#c48a18" />
+      <stop offset="85%" stop-color="#fced9d" />
+      <stop offset="100%" stop-color="#9a6507" />
+    </linearGradient>
+    <filter id="goldGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="120" height="120" rx="24" fill="#111111" stroke="url(#goldGrad)" stroke-width="2" />
+  
+  <g transform="translate(10, 5)" filter="url(#goldGlow)">
+    <!-- Crown -->
+    <path d="M 12 36 L 20 18 C 20 16 23 16 23 18 L 32 32 L 47 8 C 48 6 52 6 53 8 L 68 32 L 77 18 C 77 16 80 16 80 18 L 88 36 C 84 40 16 40 12 36 Z" 
+          fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="21" cy="16" r="3.2" fill="url(#goldGrad)" />
+    <circle cx="50" cy="6" r="4.2" fill="url(#goldGrad)" />
+    <circle cx="79" cy="16" r="3.2" fill="url(#goldGrad)" />
+
+    <!-- 'M' Letter -->
+    <path d="M 18 78 C 26 58 38 44 52 40 C 66 36 72 46 68 56 C 64 68 54 78 46 88 C 58 74 68 60 76 48 C 84 38 90 42 86 54 C 82 72 74 90 88 98 C 96 104 104 100 108 94" 
+          fill="none" stroke="url(#goldGrad)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
