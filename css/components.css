@@ -885,32 +885,145 @@
   background: rgba(212, 175, 55, 0.04);
 }
 
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .wage-calculator-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-slider-section {
-    height: clamp(520px, 82vh, 680px);
+    height: auto;
+    min-height: 520px;
+    padding: 4.5rem 0 3.5rem;
+    display: flex;
+    align-items: center;
   }
+
+  .hero-content-container {
+    height: auto;
+  }
+
   .hero-content {
-    padding: 1.5rem 0 3rem;
+    max-width: 100%;
+    padding: 0;
   }
+
+  .hero-badge {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.65rem, 7.5vw, 2.35rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-cta-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.85rem;
+  }
+
   .slider-controls {
-    bottom: 1.25rem;
-    right: 1.25rem;
+    position: static;
+    margin-top: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
+
+  .slider-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .slider-dots {
+    gap: 0.35rem;
+  }
+
   .form-grid {
     grid-template-columns: 1fr;
+    gap: 0.9rem;
   }
-  .services-grid, .project-grid {
+
+  .services-grid, 
+  .project-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
+
+  .modal-box {
+    max-width: 94%;
+    padding: 1.5rem 1.25rem;
+  }
+
+  .modal-body {
+    padding: 1.25rem 0 0.5rem;
+  }
+
   .floating-actions {
-    bottom: 1.25rem;
-    right: 1.25rem;
+    bottom: 1rem;
+    right: 1rem;
+    gap: 0.5rem;
   }
+
   .floating-whatsapp span {
     display: none;
   }
+
   .floating-whatsapp {
     padding: 0.75rem;
     border-radius: 50%;
+  }
+
+  .floating-call {
+    width: 42px;
+    height: 42px;
+  }
+
+  .category-table-wrapper {
+    margin: 0 -0.5rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .category-table th,
+  .category-table td {
+    padding: 0.85rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider-section {
+    min-height: 480px;
+    padding: 3.5rem 0 2.5rem;
+  }
+  .hero-title {
+    font-size: 1.65rem;
+  }
+  .hero-desc {
+    font-size: 0.88rem;
   }
 }
